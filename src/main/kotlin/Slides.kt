@@ -97,8 +97,9 @@ fun main() {
 
         content {
           """
-          # Markdown Slide
-          ## 🍒   
+          ![image](Penguin.png)
+          # For Loops
+          ## 🔁   
           Press ESC to see presentation overview.
           """
         }
