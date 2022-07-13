@@ -72,5 +72,6 @@ Make sure to run `./gradlew clean build` after making changes to `/src/main/reso
 6) Commit and push the changes to Heroku with: `git push heroku master`
 7) Open the app in a browser with: `heroku open`
 
+![image](src/main/kotlin/Penguin.png)
 
 

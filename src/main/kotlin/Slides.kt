@@ -79,6 +79,9 @@ fun main() {
         img[alt=revealjs-image] { 
           width: 1000px; 
         }
+        img[alt=Penguin] { 
+          width: 100px; 
+        }
         """
 
       presentationConfig {
@@ -97,9 +100,10 @@ fun main() {
 
         content {
           """
-          ![image](Penguin.png)
+          ![Penguin](images/Penguin.png)
           # For Loops
           ## 🔁   
+          
           Press ESC to see presentation overview.
           """
         }
@@ -124,12 +128,12 @@ fun main() {
       verticalSlides {
         // code1 begin
         markdownSlide {
-          val src = "kslides-examples/src/main/kotlin/content/HelloWorldK.kt"
+          val src = "src/main/content/helloworld.py"
           content {
             """
             ## Code with a markdownSlide     
-            ```kotlin [1,5|2,4|3]
-            ${include(githubRawUrl("kslides", "kslides", src), "[3-7]")}
+            ```python [1,5|2,4|3]
+            ${include(githubRawUrl("maleich", "CS-videos", src), "[3-7]")}
             ```
             """
           }

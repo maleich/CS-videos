@@ -66,6 +66,9 @@
 			img[alt=revealjs-image] { 
 			  width: 1000px; 
 			}
+			img[alt=Penguin] { 
+			  width: 100px; 
+			}
 			
 		</style>
     
@@ -85,9 +88,10 @@
       <div class="slides">
         <section data-markdown="" data-transition="zoom">
           <script type="text/template">
-![image]Penguin.png
+![Penguin](images/Penguin.png)
 # For Loops
 ## 🔁   
+
 Press ESC to see presentation overview.
 </script>
         </section>
@@ -108,12 +112,8 @@ Press ESC to see presentation overview.
           <section data-markdown="" data-separator="" data-separator-notes="^Notes?:" data-separator-vertical="">
             <script type="text/template">
 ## Code with a markdownSlide     
-```kotlin [1,5|2,4|3]
-fun main() {
-  for (i in (0..5)) {
-    println("Hello World $i")
-  }
-}
+```python [1,5|2,4|3]
+
 ```
 </script>
           </section>
@@ -123,12 +123,12 @@ fun main() {
 ## Slide Definition    
 ```kotlin []
 markdownSlide {
-  val src = "kslides-examples/src/main/kotlin/content/HelloWorldK.kt"
+  val src = "src/main/content/helloworld.py"
   content {
     """
     ## Code with a markdownSlide     
-    ```kotlin [1,5|2,4|3]
-    ${include(githubRawUrl("kslides", "kslides", src), "[3-7]")}
+    ```python [1,5|2,4|3]
+    ${include(githubRawUrl("mleich", "CS-videos", src), "[3-7]")}
     ```
     """
   }
